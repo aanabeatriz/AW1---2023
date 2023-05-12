@@ -1,0 +1,178 @@
+body
+{
+    font-family: 'Pacifico', cursive;
+    background-color: rgb(230, 240, 248);
+}
+
+.header
+{
+    text-align: center;
+    padding: 10px;
+    line-height: 15px;
+    background-image: linear-gradient(rgb(133, 208, 231),rgb(228, 135, 150));
+}
+
+
+.imgchico
+{
+    width: 200px;
+    height: 200px;
+    margin-top: 30px;
+    margin-left: 100px;
+    transition: linear 0.5s;
+}
+
+.imgchico:hover
+{
+    width: 200px;
+    height: 200px;
+    margin-top: 30px;
+    margin-left: 100px;
+    border-radius:50%;
+}
+
+
+.descricao
+{
+    margin-left: 145px;
+    margin-top: 10px;
+    width: 200px;
+    font-size: small;
+}
+
+.tabela
+{
+    border: 4px solid transparent;
+    border-image: linear-gradient(to right, blue, pink) 1;
+    padding: 10px;
+    display: flexbox;
+    margin-left: 420px;
+    margin-top: -275px;
+}
+
+.celula
+{
+    padding: 10px;
+    text-align: center;
+}
+
+.imgdjavan
+{
+    width: 200px;
+    height: 200px;
+    margin-top: 30px;
+    margin-left: 100px;
+    transition: linear 0.5s;
+}
+
+.imgdjavan:hover
+{
+    width: 200px;
+    height: 200px;
+    margin-top: 30px;
+    margin-left: 100px;
+    border-radius:50%;
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+.tabela-1
+{
+    border: 4px solid transparent;
+    border-image: linear-gradient(to right, rgb(7, 65, 22), rgb(122, 197, 141)) 1;
+    padding: 10px;
+    display: flexbox;
+    margin-left: 420px;
+    margin-top: -310px;
+}
+
+.formulario
+{
+    padding: 1px;
+    display: inline-block;
+    margin-left: 20px;
+    width: 45%;
+}
+
+.forms
+{
+    margin-top: 50px;
+    margin-left: 135px;
+    margin-right: 135px;
+    border: 4px solid transparent;
+    border-image: linear-gradient(to right, rgb(80, 5, 116), rgb(233, 70, 97)) 1;
+}
+
+.tituloForm
+{
+    background: linear-gradient(to right, rgb(219, 58, 8), rgb(219, 98, 18), rgb(230, 178, 10));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.tituloForm1
+{
+    background: linear-gradient(to right, rgb(5, 112, 11), rgb(16, 170, 16), rgb(108, 230, 9));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.input
+{
+    font-size: 20px;
+}
+
+.opcoes
+{
+    margin-left: 243px;
+}
+
+button
+{
+    background-image: radial-gradient(rgba(127, 213, 240, 0.938) 50%,rgba(6, 4, 114, 0.788));
+    transition: background-color 0.3s step-start;
+    transition: color 0.5s ease;
+
+}
+
+button:hover
+{
+    color: rgb(200, 224, 245);
+    background-image: radial-gradient(rgba(240, 127, 240, 0.938) 50%,rgba(114, 4, 90, 0.788));
+}
+
+.button1
+{
+    background-image: radial-gradient(rgba(214, 127, 240, 0.938) 50%,rgba(72, 8, 97, 0.788));
+}
+
+.button1:hover
+{
+    color: rgb(255, 73, 194);
+    background-image: radial-gradient(rgba(127, 227, 240, 0.938) 50%,rgba(4, 101, 114, 0.788));
+}
+
+.rodape
+{
+    padding: 50px;
+    background-image: linear-gradient(rgb(165, 1, 83), rgb(205, 149, 233));
+}
+
+.imgrita
+{
+    margin-left: 150px;
+    transform: rotate(15deg);
+}
+
+.imgcaetano
+{
+    margin-left: 70px;
+    transform: rotate3d(1, 1, 1, 50deg);
+}
+
+.imgmilton
+{
+    margin-left: 100px;
+    transform: rotateX(130deg);
+}
