@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+
+    <header>
+        <p class="tituloPagina">Atividade DOM</p>
+        <p class="identificação">Ana Beatriz | SP3067599</p>
+    </header>
+    
+    <main>
+        <p class="tituloAtiv">Adoção de Animais</p>
+
+     <form class="form">
+        <fieldset>
+            <legend class="legend" id="legend">Inscrição para adoção de animais</legend>
+            <br>
+
+            <label for="nome" class="nome"> Nome </label>
+            <input type="text">
+
+            <br><br>
+
+            <label for="dataNascimento">Data de nascimento</label>
+            <input type="date">
+
+            <br><br>
+
+            <label for="endereco"> Endereço</label>
+            <input type="text">
+
+            <br><br>
+
+            <label for="telefone"> Telefone ou celular </label>
+            <input type="tel">
+
+            <br><br>
+
+            <label for="salario">Salário mensal</label>
+            <input type="text">
+
+            <br><br>
+
+            <label for="salario">Possui animais? Se sim, quantos?</label>
+            <select name="options" id="options">
+                <option value="1"> 1 </option>
+                <option value="2"> 2 </option>
+                <option value="3"> 3 </option>
+                <option value="4"> 4 </option>
+                <option value="5mais"> 5 ou mais </option>
+                <option value="nãoTem"> Não possuo</option>
+            </select>
+
+            <br><br>
+
+            <button id="submit" type="submit">Enviar</button>
+            <button id="reset"type="reset">Resetar</button>
+
+        </fieldset>
+     </form>
+
+    
+        <p class="tituloTabela"> Animais disponíveis para adoção</p>
+
+        <table class="table">
+
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Raça</th>
+                    <th>Idade</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr name="linha1">
+                    <td> Nina</td>
+                    <td> SRD</td>
+                    <td> 8 anos</td>
+                </tr>
+
+                <tr>
+                    <td> Jack</td>
+                    <td> SRD</td>
+                    <td> 2 anos</td>
+                </tr>
+
+                <tr>
+                    <td> Paçoca</td>
+                    <td> SRD</td>
+                    <td> 5 meses</td>
+                </tr>
+
+                <tr>
+                    <td> Cookie</td>
+                    <td> poodle</td>
+                    <td> 3 anos</td>
+                </tr>
+            </tbody>
+
+        </table>
+    </fieldset>
+
+    <br>
+
+    <p class="tituloCarac"> Características que colaboram para você se tornar um adotante</p>
+    <ul>
+        <li id="id1">Ganhar um salário que garante uma boa qualidade de vida para animal</li>
+        <li id="id2">Ser maior de idade</li>
+        <li>Ter o nome limpo</li>
+    </ul>
+
+    <br>
+
+    </main>
+
+    <footer>
+        <p class="final" name="final"> Obrigada por ler até aqui!</p>
+    </footer>
+
+    <script>
+        //tag
+        document.getElementsByTagName("thead")[0].style.color = "rgb(212, 75, 98)"
+        document.getElementsByTagName("legend")[0].style.fontSize = "1.2rem"
+
+        //id
+        document.getElementById("id2").style.color = "rgb(207, 140, 166)" 
+        document.getElementById("id1").style.textDecoration = "underline"
+
+        //nome
+        document.getElementsByName("final")[0].style.fontSize = "1.3rem"
+        document.getElementsByName("linha1")[0].style.color = "rgb(210, 140, 214)"
+
+        //classe
+        document.getElementsByClassName("tituloCarac")[0].style.textAlign = "center"
+        document.getElementsByClassName("nome")[0].style.fontWeight = "bold"
+
+        //selector
+        document.querySelector("button#submit").style.backgroundColor = "rgb(215, 88, 123)"
+        document.querySelector("button#submit").style.color = "white"
+
+        document.querySelector("button#reset").style.backgroundColor = "rgb(215, 88, 123)"
+        document.querySelector("button#reset").style.color = "white"
+
+
+    </script>
+</body>
+</html>
